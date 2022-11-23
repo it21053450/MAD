@@ -19,6 +19,17 @@ FragmentTransaction fragmentTransaction = fragmentManger.beginTransaction();
 fragmentTransaction.replace(R.id.framelayout,fragment);
 fragmenttransaction.commit();
 
+// fragment example//
+public void changeFragment(View view){
+Fragment fragment;
+if (view == findViewById(R.id.btnFragment1)){
+fragment = new Fragment1();
+FragmentManager fm = getSupportFragmentManager();
+FragmentTransaction ft = fm.beginTransaction();
+ft.replace(R.id.frgmntDefault,fragment);
+ft.commit();
+}
+
 -------------------- stat service ----------------
 //services 
 background - runs only app is running
